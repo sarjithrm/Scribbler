@@ -1,0 +1,37 @@
+header{
+    display: flex;
+    margin: 5px;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+#title{
+    font-family: 'Montez', cursive;
+    color: blue;
+    margin: 0;
+    font-size: 38px;
+}
+
+#tagLine{
+    font-family: "Ubuntu Mono", monospace;
+    margin-top: 0;
+}
+
+header button{
+    background-color: #2E86C1;
+    color: white;
+    padding: 5px 20px;
+    border: 0 solid;
+    border-radius: 2px;
+    margin: 5px;
+    text-align: center;
+    height: 40px;
+    cursor: pointer;
+}
+
+#signUp{
+    margin-left: auto;
+}
