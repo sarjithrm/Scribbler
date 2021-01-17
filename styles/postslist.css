@@ -1,0 +1,105 @@
+body{
+    background-color: #ffeedd;
+    overflow: hidden;
+    font-family: Lucida Sans Unicode;
+}
+
+.posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.postCard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    margin: 15px 30px;
+}
+
+.postCard:hover{
+    box-shadow: 0 20px 36px 0 rgba(0,0,0,0.5);
+}
+
+.postCard .postUser{
+    text-align: center;
+    min-width: 60px;
+    width: 15%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: white;
+}
+
+.postUser p{
+    margin: auto;
+    line-height: 15px;
+    padding: 5px;
+    color: #616A6B;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.postCard .postDetails{
+    width: 85%;
+    background-color: #E5E7E9;
+    padding: 0px 15px;
+}
+
+.postCard .postDetails span{
+    float: right;
+    color: #707B7C;
+    margin: auto;
+    cursor: pointer;
+}
+
+.postCard .postDetails .postTitle{
+    color: #707B7C;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postDescription {
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 48px;
+    line-height: 16px;
+    margin-top: -8px;
+}
+
+#deleteModal{
+    width: 26%;
+    min-height: 50px;
+    min-width: 100px;
+    padding: 15px;
+}
+
+#deleteModal button{
+    width: 15%;
+    padding: 10px 0px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#yes{
+    float: left;
+    background-color: #2ECC71;
+    color: white;
+    text-align: center;
+}
+
+#no{
+    float: right;
+    background-color: #E74C3C;
+    color: white;
+}
