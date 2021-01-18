@@ -46,12 +46,16 @@ function like(){
 }
 
 function addComment(){
-    var template = "<div class=\"comments\">\n" +
-        "                <p class=\"comment\"> " + document.getElementsByClassName("commentArea")[0].getElementsByTagName("textarea")[0].value + " </p>\n" +
-        "            </div>";
-    if(document.getElementsByClassName("comments")[0]){
-        document.getElementsByClassName("comments")[0].innerHTML = "<p class=\"comment\"> " + document.getElementsByClassName("commentArea")[0].getElementsByTagName("textarea")[0].value + " </p>" + document.getElementsByClassName("comments")[0].innerHTML;
-    }else{
-        document.getElementsByClassName("commentArea")[0].innerHTML = document.getElementsByClassName("commentArea")[0].innerHTML + template;
+    var comment = document.getElementsByClassName("commentArea")[0].getElementsByTagName("textarea")[0].value;
+    if(comment.length > 0){
+        var template = "<div class=\"comments\">\n" +
+            "                <p class=\"comment\"> " + comment + " </p>\n" +
+            "            </div>";
+        if(document.getElementsByClassName("comments")[0]){
+            document.getElementsByClassName("comments")[0].innerHTML = "<p class=\"comment\"> " + comment + " </p>" + document.getElementsByClassName("comments")[0].innerHTML;
+        }else{
+            document.getElementsByClassName("commentArea")[0].innerHTML = document.getElementsByClassName("commentArea")[0].innerHTML + template;
+        }
+        document.getElementsByClassName("commentArea")[0].getElementsByTagName("textarea")[0].value = '';
     }
 }
