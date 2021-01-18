@@ -1,3 +1,8 @@
+.body{
+    font-family: Lucida Sans Unicode;
+    overflow: auto;
+}
+
 .post{
     margin: 10px 30px;
     font-family:Arial, sans-serif;
@@ -8,13 +13,12 @@
 }
 
 .action, .action-edit{
-    margin: auto;
     display: flex;
     align-items: center;
 }
 
 .action #user, .action-edit #user{
-    font-size: 20px;
+    font-size: 18px;
     font-family: Verdana, monospace;
 }
 
@@ -26,10 +30,10 @@
 .post button{
     background-color: #E70C5E;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 12px;
     outline: none;
     border: none;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -49,10 +53,13 @@
 
 .like p{
     font-family:Courier New, monospace;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .commentArea button{
-    background-color: #E74C3C;
+    margin-top: 10px;
+    background-color: #E70C5E;
 }
 
 .commentArea textarea{
@@ -63,7 +70,7 @@
 
 .comments{
     padding: 5px;
-    background-color: #B2BABB;
+    background-color: #E5E7E9;
     width: 65%;
 }
 

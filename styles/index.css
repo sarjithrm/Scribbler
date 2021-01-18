@@ -28,12 +28,29 @@ body{
 
   #createPostModel{
       width: 100%;
+      min-width: 200px;
   }
 
   #create button{
       width: 15%;
+      min-width: 100px;
   }
 
   #create{
       text-align: center;
   }
+
+    @media (max-width: 800px){
+        body{
+            overflow: auto;
+        }
+        #createPostModel{
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 250px) {
+        .postsBtn{
+            flex-wrap: wrap;
+        }
+    }

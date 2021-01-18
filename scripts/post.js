@@ -41,7 +41,7 @@ function savePost(){
 
 function like(){
     likecount = likecount + 1;
-    document.getElementsByClassName("like")[0].getElementsByTagName("button")[0].innerHTML = "<i class=\"fa fa-thumbs-up\" aria-hidden=\"true\"></i> Liked";
+    document.getElementsByClassName("like")[0].getElementsByTagName("button")[0].innerHTML = "<i class=\"fa fa-thumbs-up\" aria-hidden=\"true\"></i> Liked!";
     document.getElementsByClassName("like")[0].getElementsByTagName("p")[0].innerText = likecount + " people like this!";
 }
 

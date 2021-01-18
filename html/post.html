@@ -84,9 +84,11 @@
                 <p>Be the first one to like this!</p>
             </div>
             <div class="commentArea">
-                <textarea rows="5" cols="100" placeholder="Leave a comment..."></textarea>
-                <br>
-                <button onclick="addComment()">Comment</button>
+                <form onsubmit="addComment()">
+                    <textarea rows="5" cols="100" placeholder="Leave a comment..." required></textarea>
+                    <br>
+                    <button>Comment</button>
+                </form>
                 <h4>All Comments</h4>
             </div>
         </div>
