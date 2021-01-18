@@ -24,7 +24,6 @@ function showSignInForm(){
 }
 
 function signUp(){
-    alert("Sign Up");
     document.getElementById("name").value = '';
     document.getElementById("signUpUsername").value = '';
     document.getElementById("signUpPassword").value = '';
@@ -32,7 +31,6 @@ function signUp(){
 }
 
 function signIn(){
-    alert("Sign In");
     document.getElementById("username").value = '';
     document.getElementById("password").value = '';
 }
