@@ -25,10 +25,14 @@ function showSignInForm(){
 
 function signUp(){
     alert("Sign Up");
-    document.getElementById("signUpModal").getElementsByTagName("form")[0].reset();
+    document.getElementById("name").value = '';
+    document.getElementById("signUpUsername").value = '';
+    document.getElementById("signUpPassword").value = '';
+    document.getElementById("confirmPassword").value = '';
 }
 
 function signIn(){
     alert("Sign In");
-    document.getElementById("signInModal").getElementsByTagName("form")[0].reset();
+    document.getElementById("username").value = '';
+    document.getElementById("password").value = '';
 }
