@@ -25,8 +25,10 @@ function showSignInForm(){
 
 function signUpSubmit(){
     alert("Sign Up");
+    document.getElementById("signUpModal").getElementsByTagName("form")[0].reset();
 }
 
 function signInSubmit(){
     alert("Sign In");
+    document.getElementById("signInModal").getElementsByTagName("form")[0].reset();
 }
