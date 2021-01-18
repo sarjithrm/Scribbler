@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scribbler</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/common.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/post.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span><p id="title">ScriBBler</p><p id="tagLine">Explore, Imagine, Create</p></span>
+            <button id="signUp" onclick="showSignUpForm()">Sign Up</button>
+            <button id="signIn" onclick="showSignInForm()">Sign In</button>
+        </header>
+        <div class="modal-overlay"></div>
+        <div id="signUpModal" class="modal">
+            <div class="header">
+                <h4>Get Started<span class="close" onclick="closeModal('signUpModal')"><i class="fa fa-times" aria-hidden="true"></i></span></h4>
+                <hr>
+            </div>
+            <form action="#" onsubmit="signUpSubmit()">
+                <div class="element">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="element">
+                    <label for="signUpUsername">Username</label>
+                    <input type="text" id="signUpUsername" placeholder="Enter your username" required>
+                </div>
+                <div class="element">
+                    <label for="signUpPassword">Password</label>
+                    <input type="password" id="signUpPassword" placeholder="Enter your password" required>
+                </div>
+                <div class="element">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Re-enter your password" required>
+                </div>
+                <div class="element">
+                    <button id="signUpSubmit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+        <div id="signInModal" class="modal">
+            <div class="header">
+                <h4>Welcome Back!<span class="close" onclick="closeModal('signInModal')"><i class="fa fa-times" aria-hidden="true"></i></span></h4>
+                <hr>
+            </div>
+            <form action="#" onsubmit="signInSubmit()">
+                <div class="element">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="element">
+                    <button id="signInSubmit">Sign In</button>
+                </div>
+                <p class="info">Not a member? <a href="#">Sign Up</a></p>
+            </form>
+        </div>
+        <div class="post">
+            <div class="post-editable">
+                <div>
+                    <h2 id="postTitle"></h2>
+                </div>
+                <div class="action">
+                    <p id="user"></p>
+                    <button onclick="editPost()">Edit  <i class="fas fa-edit" aria-hidden="true"></i></button>
+                </div>
+                <div>
+                    <p id="description"></p>
+                </div>
+            </div>
+            <div class="like">
+                <button onclick="like()"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</button>
+                <p>Be the first one to like this!</p>
+            </div>
+            <div class="commentArea">
+                <form onsubmit="addComment()">
+                    <textarea rows="5" cols="100" placeholder="Leave a comment..." required></textarea>
+                    <br>
+                    <button>Comment</button>
+                </form>
+                <h4>All Comments</h4>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/post.js"></script>
+    <script src="../scripts/common.js"></script>
+</body>
+</html>
